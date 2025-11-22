@@ -1,5 +1,8 @@
 .button {
+    display: flex;
+    align-items: center;
     height: var(--button-height);
+    padding: 15px;
     background-color: var(--color-dark);
     color: var(--color-light);
     border: var(--border);

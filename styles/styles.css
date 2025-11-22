@@ -228,7 +228,7 @@ svg * {
   --font-family-base: "Comfortaa", sans-serif;
   --section-padding-y: 70px;
   --input-height: 59px;
-  --button-height: 68px;
+  --button-height: 45px;
   --transition-duration: 0.15s;
 }
 
@@ -332,7 +332,10 @@ h4, .h4 {
 }
 
 .button {
+  display: flex;
+  align-items: center;
   height: var(--button-height);
+  padding: 15px;
   background-color: var(--color-dark);
   color: var(--color-light);
   border: var(--border);
@@ -372,4 +375,12 @@ h4, .h4 {
   flex-direction: column;
   row-gap: 15px;
   align-items: center;
+}
+
+.news {
+  background-color: var(--color-light-blue);
+}
+
+.footer {
+  background-color: var(--color-blue);
 }/*# sourceMappingURL=styles.css.map */
