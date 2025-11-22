@@ -1,4 +1,11 @@
 .showcase {
+    display: flex;
     background-color: var(--color-light-blue);
-    padding-inline: none;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
 }

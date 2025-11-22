@@ -1,0 +1,14 @@
+.products {
+    &__list {
+        display: flex;
+        justify-content: center;
+        column-gap: 60px;
+    }
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
+    }
+}

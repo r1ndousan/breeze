@@ -216,8 +216,8 @@ svg * {
   font-display: swap;
 }
 :root {
-  --color-light-blue: #a1bdfa;
-  --color-blue: #607cab;
+  --color-light-blue: #afc7fa;
+  --color-blue: #7a9ad1;
   --color-dark: #0b0c0f;
   --color-gray: #28282d;
   --color-light: #FFFFFF;
@@ -226,8 +226,6 @@ svg * {
   --border-radius-small: 12px;
   --border-radius-large: 45px;
   --font-family-base: "Comfortaa", sans-serif;
-  --container-width: 1400px;
-  --container-padding-x: 20px;
   --section-padding-y: 70px;
   --input-height: 59px;
   --button-height: 68px;
@@ -276,7 +274,7 @@ a {
 }
 
 h1, h2, h3, h4 {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h1, .h1 {
@@ -300,9 +298,6 @@ h4, .h4 {
   justify-content: flex-start;
   align-items: center;
   padding-right: 20px;
-}
-.header__logo-title {
-  font-weight: 700;
 }
 .header__inner {
   display: flex;
@@ -347,7 +342,6 @@ h4, .h4 {
 .button:hover {
   background-color: var(--color-light-blue);
   color: var(--color-dark);
-  transition-duration: var(--transition-duration);
 }
 .button-login {
   background-color: var(--color-light);
@@ -355,10 +349,27 @@ h4, .h4 {
 }
 .button-login:hover {
   background-color: var(--color-light-blue);
-  transition-duration: var(--transition-duration);
 }
 
 .showcase {
+  display: flex;
   background-color: var(--color-light-blue);
-  padding-inline: none;
+}
+.showcase__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.products__list {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.products-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */

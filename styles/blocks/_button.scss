@@ -9,7 +9,6 @@
     &:hover {
         background-color: var(--color-light-blue);
         color: var(--color-dark);
-        transition-duration: var(--transition-duration);
     }
 
     &-login {
@@ -18,7 +17,6 @@
 
         &:hover {
             background-color: var(--color-light-blue);
-            transition-duration: var(--transition-duration);
         }
     }
 }
