@@ -1,0 +1,12 @@
+.section {
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    padding: 45px 60px 60px;
+  }
+
+  &__description {
+    max-width: 580px;
+  }
+}

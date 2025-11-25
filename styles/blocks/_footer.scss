@@ -1,3 +1,44 @@
 .footer {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-blue);
+
+    &__inner {
+        padding: 55px 60px 15px;
+    }
+
+    &__body {
+        display: flex;
+        column-gap: 180px;
+        border-bottom: 1px solid currentColor;
+        padding-bottom: 30px;
+        
+        &-menu {
+            display: flex;
+            column-gap: 200px;
+
+            a {
+                &:hover {
+                color: var(--color-light);
+                }
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 12px;
+    }
+
+    &__menu {
+        &-list {
+            row-gap: 5px;
+        }
+    }
+
+    &__extra {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-inline: 20px;
+    }
 }

@@ -55,7 +55,7 @@
                 Войти
             </button>
             <button 
-                class="header__button button" 
+                class="header__button button button-signup" 
                 type="button"
             >
                 Регистрация
@@ -68,21 +68,23 @@
         <section class="section container">
             <div class="section__body">
                 <div class="showcase">
-                    <div class="showcase__body">
-                        <h1 class="showcase__title">
-                            Мастерская парфюмерии<br>
-                            breeze
-                        </h1>
-                        <div class="showcase__description">
-                            <p>Мы создаем уникальную крафтовую парфюмерию из натуральных ингредиентов, вдохновленную природой и свежестью.</p>
+                    <div class="showcase__inner">
+                        <div class="showcase__body">
+                            <h1 class="showcase__title">
+                                Мастерская парфюмерии<br>
+                                breeze
+                            </h1>
+                            <div class="showcase__description">
+                                <p>Мы создаем уникальную крафтовую парфюмерию из натуральных ингредиентов, вдохновленную природой и свежестью.</p>
+                            </div>
                         </div>
+                        <img 
+                            src="/images/header-image.png" 
+                            alt="" 
+                            class="showcase__image"
+                            width="900" height="700" loading="lazy"
+                        >
                     </div>
-                    <img 
-                        src="/images/header-image.png" 
-                        alt="" 
-                        class="showcase__image"
-                        width="500" height="400" loading="lazy"
-                    >
                 </div>
             </div>
         </section>
@@ -93,130 +95,206 @@
             </header>
             <div class="section__body">
                 <div class="products">
-                    <ul class="products__list">
-                        <li class="products__item">
-                            <a class="products-card" href="/">
-                                <img 
-                                    src="/images/showcase_1.jpg" 
-                                    alt="" 
-                                    class="products-card__image"
-                                    width="250" height="380" loading="lazy"
-                                >
-                                <h4 class="products-card__title">Моно-ароматы</h4>
-                            </a>
-                        </li>
-                        <li class="products__item">
-                            <a class="products-card" href="/">
-                                <img 
-                                    src="/images/showcase_2.jpg" 
-                                    alt="" 
-                                    class="products-card__image"
-                                    width="250" height="380" loading="lazy"
-                                >
-                                <h4 class="products-card__title">Авторские композиции</h4>
-                            </a>
-                        </li>
-                        <li class="products__item">
-                            <a class="products-card" href="/">
-                                <img 
-                                    src="/images/showcase_3.jpg" 
-                                    alt="" 
-                                    class="products-card__image"
-                                    width="250" height="380" loading="lazy"
-                                >
-                                <h4 class="products-card__title">Популярные композиции</h4>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="products__inner">
+                        <ul class="products__list">
+                            <li class="products__item">
+                                <a class="products-card" href="/">
+                                    <img 
+                                        src="/images/showcase_1.jpg" 
+                                        alt="" 
+                                        class="products-card__image"
+                                        width="250" height="380" loading="lazy"
+                                    >
+                                    <h4 class="products-card__title">Моно-ароматы</h4>
+                                </a>
+                            </li>
+                            <li class="products__item">
+                                <a class="products-card" href="/">
+                                    <img 
+                                        src="/images/showcase_2.jpg" 
+                                        alt="" 
+                                        class="products-card__image"
+                                        width="250" height="380" loading="lazy"
+                                    >
+                                    <h4 class="products-card__title">Авторские композиции</h4>
+                                </a>
+                            </li>
+                            <li class="products__item">
+                                <a class="products-card" href="/">
+                                    <img 
+                                        src="/images/showcase_3.jpg" 
+                                        alt="" 
+                                        class="products-card__image"
+                                        width="250" height="380" loading="lazy"
+                                    >
+                                    <h4 class="products-card__title">Популярные композиции</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
                 </div>
             </div>
         </section>
 
         <section class="section container">
-            <header class="section__header">
+            <header class="section__header news">
                 <h2 class="section__title h2">Новости</h2>
             </header>
             <div class="section__body">
                 <div class="news">
-                    <ul class="news__list">
-                       <li class="news__item">
-                            
-                       </li>
-                    </ul>
-                    <img 
-                        src="" 
-                        alt="" 
-                        class="showcase__image"
-                        width="" height="" loading="lazy"
-                    >
+                    <div class="news__slider">
+                        <button 
+                            class="news__button button"
+                            type="button"
+                        >
+                            <
+                        </button>
+                        <ul class="news__list">
+                            <li class="news__item">
+                                    <article class="news-card">
+                                        <img 
+                                            src="/images/news_1.jpg" 
+                                            alt="" 
+                                            class="news-card__image"
+                                            width="500" height="400" loading="lazy"
+                                        >
+                                        <div class="news-card__body">
+                                            <h3 class="news-card__title">
+                                                <p>title</p>
+                                            </h3>
+                                            <div class="news-card__date">
+                                                <p><time datetime="10.12.2025">10.12.25</time></p>
+                                            </div>
+                                            <div class="news-card__description">
+                                                <p>descr</p>
+                                            </div>
+                                            <a href="/" class="news-card__link">
+                                                <span class="visually-hidden">Увидеть новость полностью</span>
+                                            </a>
+                                        </div>   
+                                    </article>
+                            </li>
+                            <li class="news__item">
+                                <article class="news-card">
+                                    <img 
+                                        src="/images/news_1.jpg" 
+                                        alt="" 
+                                        class="news-card__image"
+                                        width="500" height="400" loading="lazy"
+                                    >
+                                    <div class="news-card__body">
+                                        <h3 class="news-card__title">
+                                            <p>title</p>
+                                        </h3>
+                                        <div class="news-card__date">
+                                            <p><time datetime="10.12.2025">10.12.25</time></p>
+                                        </div>
+                                        <div class="news-card__description">
+                                            <p>descr</p>
+                                        </div>
+                                        <a href="/" class="news-card__link">
+                                            <span class="visually-hidden">Увидеть новость полностью</span>
+                                        </a>
+                                    </div>   
+                                </article>
+                            </li>
+                            <li class="news__item">
+                                <article class="news-card">
+                                    <img 
+                                        src="/images/news_1.jpg" 
+                                        alt="" 
+                                        class="news-card__image"
+                                        width="500" height="400" loading="lazy"
+                                    >
+                                    <div class="news-card__body">
+                                        <h3 class="news-card__title">
+                                            <p>title</p>
+                                        </h3>
+                                        <div class="news-card__date">
+                                            <p><time datetime="10.12.2025">10.12.25</time></p>
+                                        </div>
+                                        <div class="news-card__description">
+                                            <p>description</p>
+                                        </div>
+                                        <a href="/" class="news-card__link">
+                                            <span class="visually-hidden">Увидеть новость полностью</span>
+                                        </a>
+                                    </div>   
+                                </article>
+                            </li>
+                        </ul>
+                        <button 
+                            class="news__button button"
+                            type="button"
+                        >
+                            >
+                        </button>
+                    </div>    
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer__body">
-            <div class="footer__logo">
-                <a href="/" class="header__logo logo">
-                    <img 
-                        src="./images/logo.png" 
-                        alt="" 
-                        class="logo__image"
-                        width="80" height="60" loading="lazy"
-                    >
-                </a>
-            </div>
-            <div class="footer__nav">
-                <h3 class="footer__title">Навигация</h3>
-                <nav class="footer__menu">
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item">
-                            <a href="/" class="footer__menu-link">Главная</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="/" class="footer__menu-link">Каталог</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="/" class="footer__menu-link">Новости</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="/" class="footer__menu-link">Контакты</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="/" class="header__menu-link">Корзина</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="/" class="header__menu-link">Мои заказы</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="/" class="header__menu-link">Заказы</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer__contacts">
-                <h3 class="footer__title">Контакты</h3>
-                <div class="footer__contacts-body">
-                    <ul class="footer__contacts-list">
-                        <li class="footer__contacts-item">
-                            <address></address>
-                        </li>
-                        <li class="footer__contacts-item">
-                            tel
-                        </li>
-                        <li class="footer__contacts-item">
-                            email
-                        </li>
-                        <li class="footer__contacts-item">
-                            
-                        </li>
-                    </ul>
+    <footer class="footer container">
+        <div class="footer__inner">
+            <div class="footer__body">
+                <div class="footer__logo">
+                    <a href="/" class="header__logo logo">
+                        <img 
+                            src="./images/logo.png" 
+                            alt="" 
+                            class="logo__image"
+                            width="80" height="60" loading="lazy"
+                        >
+                    </a>
                 </div>
+                <div class="footer__body-menu">
+                    <div class="footer__nav">
+                        <h3 class="footer__title">Навигация</h3>
+                        <nav class="footer__menu">
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="/" class="footer__menu-link">Главная</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="/" class="footer__menu-link">Каталог</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="/" class="footer__menu-link">Новости</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="/" class="footer__menu-link">Контакты</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="/" class="header__menu-link">Корзина</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="/" class="header__menu-link">Мои заказы</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="/" class="header__menu-link">Заказы</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__contacts">
+                        <h3 class="footer__title">Контакты</h3>
+                        <address class="footer__contacts-body">
+                            <p>Email: <a href="mailto:info@positivus.com">info@breezeparfume.com</a></p>
+                            <p>Телефон: <a href="tel:5555678901">555-567-8901</a></p>
+                            <p>
+                                Адрес: 1234 <br/>
+                                Москва, ул. Ленина, д.1
+                            </p>
+                        </address>
+                    </div>
             </div>
+            
         </div>
         <div class="footer__extra">
-            <p>©<>2025<> Парфюмерная мастерская "breeze".</p>
+            <p>©<time datetime="2025">2025</time> Парфюмерная мастерская "breeze".</p>
             <p>Сайт разработан студенткой Бирюковой Д.С. в рамках курсового проекта</p>
+        </div>
         </div>
     </footer>
 </body>
