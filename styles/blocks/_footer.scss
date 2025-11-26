@@ -12,6 +12,7 @@
         column-gap: 180px;
         border-bottom: 1px solid currentColor;
         padding-bottom: 30px;
+        color: var(--color-light);
         
         &-menu {
             display: flex;
@@ -19,7 +20,7 @@
 
             a {
                 &:hover {
-                color: var(--color-light);
+                color: var(--color-dark);
                 }
             }
         }
@@ -27,6 +28,7 @@
 
     &__title {
         margin-bottom: 12px;
+        color: var(--color-dark);
     }
 
     &__menu {
@@ -40,5 +42,6 @@
         justify-content: space-between;
         margin-top: 20px;
         padding-inline: 20px;
+        color: var(--color-light);
     }
 }
