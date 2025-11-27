@@ -331,7 +331,6 @@ h4, .h4 {
 }
 .header__menu-item:hover {
   color: var(--color-light);
-  transition-duration: var(--transition-duration);
 }
 .header__auth {
   display: flex;
@@ -371,6 +370,14 @@ h4, .h4 {
 }
 .button-login:hover {
   background-color: var(--color-light-blue);
+}
+.button-white {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+.button-white:hover {
+  background-color: var(--color-dark);
+  color: var(--color-light);
 }
 
 .input {
@@ -597,11 +604,11 @@ h4, .h4 {
   color: var(--color-blue);
 }
 
-.news-page {
+.all-news {
   background: linear-gradient(var(--color-light-blue) 50%, var(--color-light) 50%);
   padding: 0px 60px 60px;
 }
-.news-page__selection {
+.all-news__selection {
   display: flex;
   justify-content: center;
   -moz-column-gap: 50px;
@@ -609,12 +616,12 @@ h4, .h4 {
   padding-inline: 100px;
   margin-bottom: 45px;
 }
-.news-page__selection-inputs {
+.all-news__selection-inputs {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
-.news-page__main {
+.all-news__main {
   display: flex;
   justify-content: space-between;
   padding-inline: 80px;
@@ -623,18 +630,57 @@ h4, .h4 {
        column-gap: 30px;
   margin-bottom: 40px;
 }
-.news-page__input {
+.all-news__input {
   width: 600px;
 }
-.news-page__pagination {
+.all-news__pagination {
   display: flex;
   justify-content: center;
+}
+
+.news-page {
+  padding: 40px 60px;
+  background-color: var(--color-light-blue);
+}
+.news-page__buttons {
+  display: flex;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  margin-bottom: 30px;
+}
+.news-page__buttons-admin {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.news-page__body {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.news-page__title {
+  padding-inline: 50px;
+  margin-bottom: 20px;
+}
+.news-page__description {
+  width: 650px;
+  text-indent: 20px;
+}
+.news-page__extra {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.news-page__date {
+  padding-left: 15px;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
   background-color: var(--color-blue);
+  font-size: 14px;
 }
 .footer__inner {
   padding: 40px 60px 15px;
@@ -657,6 +703,7 @@ h4, .h4 {
 .footer__title {
   margin-bottom: 12px;
   color: var(--color-dark);
+  font-size: 18px;
 }
 .footer__menu-list {
   row-gap: 5px;

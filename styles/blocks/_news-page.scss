@@ -1,35 +1,41 @@
 .news-page {
-    background: linear-gradient( var(--color-light-blue) 50%, var(--color-light) 50%);
-    padding: 0px 60px 60px;
+    padding: 40px 60px;
+    background-color: var(--color-light-blue);
 
-    &__selection {
+    &__buttons {
         display: flex;
-        justify-content: center;
-        column-gap: 50px;
-        padding-inline: 100px;
-        margin-bottom: 45px;
+        column-gap: 200px;
+        margin-bottom: 30px;
 
-        &-inputs {
+        &-admin {
             display: flex;
-            column-gap: 40px;
+            column-gap: 30px;
         }
     }
 
-    &__main {
+    &__body {
         display: flex;
         justify-content: space-between;
-        padding-inline: 80px;
-        align-items: center;
-        column-gap: 30px;
-        margin-bottom: 40px;
+        column-gap: 40px;
     }
 
-    &__input {
-        width: 600px;
+    &__title {
+        padding-inline: 50px;
+        margin-bottom: 20px;
     }
 
-    &__pagination {
+    &__description {
+        width: 650px;
+        text-indent: 20px;
+    }
+
+    &__extra {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__date {
+        padding-left: 15px;
     }
 }

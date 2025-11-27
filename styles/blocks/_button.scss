@@ -31,4 +31,14 @@
             background-color: var(--color-light-blue);
         }
     }
+
+    &-white {
+        background-color: var(--color-light);
+        color: var(--color-dark);
+
+        &:hover {
+            background-color: var(--color-dark);
+            color: var(--color-light);
+        }
+    }
 }
