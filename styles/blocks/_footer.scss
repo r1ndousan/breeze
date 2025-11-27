@@ -4,15 +4,14 @@
     background-color: var(--color-blue);
 
     &__inner {
-        padding: 55px 60px 15px;
+        padding: 40px 60px 15px;
     }
 
     &__body {
         display: flex;
-        column-gap: 180px;
+        column-gap: 100px;
         border-bottom: 1px solid currentColor;
         padding-bottom: 30px;
-        color: var(--color-light);
         
         &-menu {
             display: flex;
@@ -20,7 +19,7 @@
 
             a {
                 &:hover {
-                color: var(--color-dark);
+                color: var(--color-light);
                 }
             }
         }
@@ -42,6 +41,5 @@
         justify-content: space-between;
         margin-top: 20px;
         padding-inline: 20px;
-        color: var(--color-light);
     }
 }

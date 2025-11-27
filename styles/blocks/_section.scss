@@ -1,12 +1,25 @@
 .section {
-  &__header {
+  &__header, 
+  &__header-blue {
     display: flex;
     align-items: center;
     column-gap: 40px;
     padding: 45px 60px 60px;
+
+    &-blue {
+      background-color: var(--color-light-blue);
+    }
   }
 
   &__description {
     max-width: 580px;
+  }
+}
+
+.header {
+  &-center {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-light-blue);
   }
 }

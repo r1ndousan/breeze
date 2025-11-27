@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" 
         content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Breeze</title>
+</head>
 <body>
     <header class="header">
         <div class="header__inner container">
@@ -64,11 +66,11 @@
 
     <main class="content">
         <section class="section container">
+            <header class="section__header header-center">
+                <h1 class="contacts__title h2">Контакты</h1>
+            </header>
             <div class="section__body">
                 <div class="contacts">
-                    <div class="contacts__inner">
-                        <h1 class="contacts__title h2">Контакты</h1>
-                        <div class="contacts__body">
                             <ul class="contacts__body-list">
                                 <li class="contacts__body-item">
                                     <h3 class="contacts__body-title">Email:</h3>
@@ -90,8 +92,6 @@
                                         </p>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -150,13 +150,12 @@
                             </p>
                         </address>
                     </div>
+                </div>
             </div>
-            
-        </div>
-        <div class="footer__extra">
-            <p>©<time datetime="2025">2025</time> Парфюмерная мастерская "breeze".</p>
-            <p>Сайт разработан студенткой Бирюковой Д.С. в рамках курсового проекта</p>
-        </div>
+            <div class="footer__extra">
+                <p>©<time datetime="2025">2025</time> Парфюмерная мастерская "breeze".</p>
+                <p>Сайт разработан студенткой Бирюковой Д.С. в рамках курсового проекта</p>
+            </div>
         </div>
     </footer>
 </body>

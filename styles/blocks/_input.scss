@@ -1,0 +1,22 @@
+.input {
+    display: flex;
+    padding-left: 30px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+
+
+}
+
+.select {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding-inline: 20px;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+}

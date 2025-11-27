@@ -8,6 +8,15 @@ body {
     background-color: var(--color-light);
 }
 
+img {
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    &.none {
+        border: none;
+    }
+}
+
 a,
 button,
 input,
