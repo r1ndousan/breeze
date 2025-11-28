@@ -18,6 +18,10 @@
   &-gradient {
     background: linear-gradient(var(--color-light-blue) 50%, var(--color-light) 50%);
   }
+
+  &-blue {
+    background-color: var(--color-light-blue);
+  }
 }
 
 .header {

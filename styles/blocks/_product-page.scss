@@ -1,0 +1,42 @@
+.product-page {
+    padding: 60px 40px;
+
+    &__buttons {
+        display: flex;
+        column-gap: 500px;
+        margin-bottom: 40px;
+
+        &-admin {
+            display: flex;
+            column-gap: 40px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        column-gap: 80px;
+        padding-inline: 50px;
+    }
+
+    &__title {
+        padding-inline: 50px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__description {
+        width: 650px;
+        text-indent: 20px;
+    }
+
+    &__buy {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -433,6 +433,9 @@ h4, .h4 {
 .section-gradient {
   background: linear-gradient(var(--color-light-blue) 50%, var(--color-light) 50%);
 }
+.section-blue {
+  background-color: var(--color-light-blue);
+}
 
 .header-center {
   display: flex;
@@ -752,6 +755,45 @@ h4, .h4 {
 .catalog__pagination {
   display: flex;
   justify-content: center;
+}
+
+.product-page {
+  padding: 60px 40px;
+}
+.product-page__buttons {
+  display: flex;
+  -moz-column-gap: 500px;
+       column-gap: 500px;
+  margin-bottom: 40px;
+}
+.product-page__buttons-admin {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.product-page__body {
+  display: flex;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  padding-inline: 50px;
+}
+.product-page__title {
+  padding-inline: 50px;
+  margin-bottom: 20px;
+}
+.product-page__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-page__description {
+  width: 650px;
+  text-indent: 20px;
+}
+.product-page__buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer {
