@@ -14,6 +14,10 @@
   &__description {
     max-width: 580px;
   }
+
+  &-gradient {
+    background: linear-gradient(var(--color-light-blue) 50%, var(--color-light) 50%);
+  }
 }
 
 .header {

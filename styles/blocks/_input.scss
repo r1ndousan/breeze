@@ -1,6 +1,6 @@
 .input {
     display: flex;
-    padding-left: 30px;
+    padding: 8px 30px;
     border: var(--border);
     border-radius: var(--border-radius);
 
@@ -8,10 +8,15 @@
         filter: brightness(0.9);
     }
 
-
+    &-min,
+    &-max {
+        padding-left: 15px;
+        width: 130px;
+    }
 }
 
 .select {
+    padding: 10px 30px;
     border: var(--border);
     border-radius: var(--border-radius);
     padding-inline: 20px;

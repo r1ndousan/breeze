@@ -379,18 +379,36 @@ h4, .h4 {
   background-color: var(--color-dark);
   color: var(--color-light);
 }
+.button-blue {
+  background-color: var(--color-blue);
+  color: var(--color-dark);
+}
+.button-blue:hover {
+  background-color: var(--color-light-blue);
+}
+.button-arrow {
+  padding: 40px 25px;
+}
+.button-arrow:hover {
+  background-color: var(--color-blue);
+}
 
 .input {
   display: flex;
-  padding-left: 30px;
+  padding: 8px 30px;
   border: var(--border);
   border-radius: var(--border-radius);
 }
 .input:hover {
   filter: brightness(0.9);
 }
+.input-min, .input-max {
+  padding-left: 15px;
+  width: 130px;
+}
 
 .select {
+  padding: 10px 30px;
   border: var(--border);
   border-radius: var(--border-radius);
   padding-inline: 20px;
@@ -411,6 +429,9 @@ h4, .h4 {
 }
 .section__description {
   max-width: 580px;
+}
+.section-gradient {
+  background: linear-gradient(var(--color-light-blue) 50%, var(--color-light) 50%);
 }
 
 .header-center {
@@ -517,9 +538,6 @@ h4, .h4 {
 .news__item {
   min-width: 500px;
   scroll-snap-align: start;
-}
-.news__button {
-  padding: 40px 25px;
 }
 
 .grid {
@@ -676,6 +694,66 @@ h4, .h4 {
   padding-left: 15px;
 }
 
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.product-card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog {
+  padding: 0px 60px 60px;
+}
+.catalog__filters {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  row-gap: 15px;
+  margin-bottom: 50px;
+}
+.catalog__filters-search {
+  display: flex;
+}
+.catalog__filters-cat-sort {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.catalog__filters-price {
+  display: flex;
+  justify-self: start;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-bottom: 10px;
+}
+.catalog__filters-price--field {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.catalog__input {
+  width: 850px;
+}
+.catalog__body {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  margin-bottom: 50px;
+}
+.catalog__list {
+  row-gap: 30px;
+}
+.catalog__pagination {
+  display: flex;
+  justify-content: center;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -684,6 +762,12 @@ h4, .h4 {
 }
 .footer__inner {
   padding: 40px 60px 15px;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
 }
 .footer__body {
   display: flex;
