@@ -419,9 +419,11 @@ h4, .h4 {
 
 .section__header, .section__header-blue {
   display: flex;
+  flex-direction: column;
   align-items: center;
   -moz-column-gap: 40px;
        column-gap: 40px;
+  row-gap: 30px;
   padding: 45px 60px 60px;
 }
 .section__header-blue, .section__header-blue-blue {
@@ -785,6 +787,22 @@ h4, .h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.product-page__text-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+.product-page__categorie {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 30px;
+  background-color: var(--color-light);
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 .product-page__description {
   width: 650px;
