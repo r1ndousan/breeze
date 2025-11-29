@@ -796,6 +796,43 @@ h4, .h4 {
   justify-content: space-between;
 }
 
+.orders {
+  padding: 0px 100px 60px;
+}
+
+.order {
+  padding: 40px;
+  background-color: var(--color-light);
+  border: var(--border);
+  border-radius: var(--border-radius-large);
+}
+.order__table th, .order tr {
+  display: flex;
+  flex-direction: column;
+}
+.order__info {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 80px;
+  margin-bottom: 30px;
+}
+.order__info-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.order__interactive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order__interactive-status {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
