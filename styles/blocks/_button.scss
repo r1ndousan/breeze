@@ -58,4 +58,13 @@
             background-color: var(--color-blue);
         }
     }
+
+    &-order {
+        padding: 30px 50px;
+        font-size: 28px;
+
+        &:hover {
+            background-color: var(--color-light-blue);
+        }
+    }
 }

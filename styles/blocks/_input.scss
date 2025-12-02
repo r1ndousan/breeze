@@ -25,3 +25,22 @@
         filter: brightness(0.9);
     }
 }
+
+.radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: var(--border);
+    border-radius: 50%;
+    background-color: transparent;
+
+    &:checked {
+        border: 10px solid var(--color-blue);
+    }
+
+    &:hover {
+        background-color: var(--color-light-blue);
+    }
+}

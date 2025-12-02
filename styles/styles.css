@@ -392,6 +392,13 @@ h4, .h4 {
 .button-arrow:hover {
   background-color: var(--color-blue);
 }
+.button-order {
+  padding: 30px 50px;
+  font-size: 28px;
+}
+.button-order:hover {
+  background-color: var(--color-light-blue);
+}
 
 .input {
   display: flex;
@@ -417,10 +424,24 @@ h4, .h4 {
   filter: brightness(0.9);
 }
 
+.radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: var(--border);
+  border-radius: 50%;
+  background-color: transparent;
+}
+.radio:checked {
+  border: 10px solid var(--color-blue);
+}
+.radio:hover {
+  background-color: var(--color-light-blue);
+}
+
 .section__header, .section__header-blue {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   -moz-column-gap: 40px;
        column-gap: 40px;
   row-gap: 30px;
@@ -603,6 +624,9 @@ h4, .h4 {
   opacity: 0.7;
 }
 
+.contacts {
+  padding: 0px 60px 100px;
+}
 .contacts__inner {
   display: flex;
   flex-direction: column;
@@ -849,6 +873,83 @@ h4, .h4 {
   align-items: center;
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+
+.cart {
+  padding: 0 100px 60px;
+}
+.cart-card {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  padding-block: 40px;
+  border-bottom: var(--border);
+}
+.cart-card__info {
+  display: flex;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  padding: 10px;
+}
+.cart-card__info-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart-card__info-list {
+  display: flex;
+  justify-self: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding-top: 10px;
+}
+.cart-card__info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.cart-card__count-input {
+  display: flex;
+  justify-items: center;
+  width: 80px;
+  padding: 10px;
+}
+.cart-card label {
+  cursor: text;
+}
+.cart__summary {
+  display: flex;
+  justify-content: end;
+  padding: 30px;
+  font-size: 28px;
+}
+
+.delivery {
+  padding: 0 100px 100px;
+}
+.delivery__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  margin-bottom: 30px;
+}
+.delivery__item {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding: 0 100px 30px 10px;
+}
+.delivery__item:not(:last-child) {
+  border-bottom: var(--border);
+}
+.delivery__info-input {
+  width: 700px;
+}
+.delivery__button-order {
+  display: flex;
+  justify-content: end;
 }
 
 .footer {
